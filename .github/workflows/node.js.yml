@@ -19,7 +19,7 @@ jobs:
     steps:
       - shell: bash
         env:
-          ENV_VAR_TEST:${{secrets.DATABASE_NAME}}
+          ENV_VAR_TEST: ${{secrets.DATABASE_NAME}}
         run: |
           echo Prueba Github Actions
           echo $ENV_VAR_TEST
