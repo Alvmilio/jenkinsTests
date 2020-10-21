@@ -19,10 +19,18 @@ jobs:
     steps:
       - shell: bash
         env:
-          ENV_VAR_TEST: ${{secrets.DATABASE_NAME}}
+          DATABASE_HOST: ${{secrets.DATABASE_NAME}}
+          DATABASE_USER: ${{secrets.DATABASE_USER}}
+          DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
+          DATABASE_NAME: ${{secrets.DATABASE_NAME}}
+          DATABASE_PORT: $${{secrets.DATABASE_PORT}}
         run: |
           echo Prueba Github Actions
-          echo $ENV_VAR_TEST
+          echo $DATABASE_HOST
+          echo $DATABASE_USER
+          echo $DATABASE_PASSWORD
+          echo $DATABASE_NAME
+          echo $DATABASE_PORT
     #- uses: actions/checkout@v2
     #- name: Use Node.js ${{ matrix.node-version }}
     #  uses: actions/setup-node@v1
