@@ -1,10 +1,10 @@
 export default 
 {
     database: {
-        host: 'analisisg5.cmmnsbblcoky.us-east-2.rds.amazonaws.com',
-        user: 'admin',
-        password: 'analisisG5',
-        database: 'FreshToGo',
-        port: 3306
+        host: process.env.DATABASE_HOST,
+        user: process.env.DATABASE_USER,
+        password: process.env.DATABASE_PASSWORD,
+        database: process.env.DATABASE_NAME,
+        port: process.env.DATABASE_PORT
     }
 }
