@@ -7,6 +7,8 @@ sudo ssh ubuntu@ec2-18-206-168-172.compute-1.amazonaws.com <<EOF
  git pull
  npm install
  tsc
+ echo 'PM2 starting restart'
  pm2 restart all
+ echo 'PM2 succesfully restarted'
  exit
 EOF
