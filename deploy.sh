@@ -1,5 +1,5 @@
 #Backend deploy script
-sudo ssh ubuntu@ec2-18-206-168-172.compute-1.amazonaws.com <<EOF
+ssh ubuntu@ec2-18-206-168-172.compute-1.amazonaws.com <<EOF
  cd AyD1
  cd AyD_Proyecto_G5
  cd BackEnd
