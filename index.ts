@@ -18,7 +18,7 @@ class Server
     config() : void
     {
         this.app.set('port', 3002);
-        ///jenkins job trigger test   
+        ///jenkins job trigger test   testx4
         this.app.use(cors());
         this.app.use(express.json());
         this.app.use(express.urlencoded({extended : false}));
