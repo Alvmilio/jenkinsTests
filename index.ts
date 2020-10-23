@@ -18,7 +18,7 @@ class Server
     config() : void
     {
         this.app.set('port', 3002);
-        
+        ///testing github webhook, shouldnt trigger jenkins build
         this.app.use(cors());
         this.app.use(express.json());
         this.app.use(express.urlencoded({extended : false}));
